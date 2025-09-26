@@ -1,0 +1,93 @@
+Guia do Docker
+
+1. O que é Docker?
+
+ Docker é uma plataforma para criar, empacotar e executar aplicações dentro de containers — ambientes isolados que contêm tudo que a aplicação precisa para funcionar (código, bibliotecas, variáveis de ambiente, dependências).
+
+ Pense num container como uma “caixa” que roda seu software igual em qualquer lugar: no seu PC, no servidor ou na nuvem.
+
+
+2. Conceitos essenciais
+
+  Termo                   	    Explicação
+
+  Imagem	                    Modelo pronto de sistema/app. Ex.: ubuntu:22.04, mysql:8.
+  Container	                    Instância em execução de uma imagem.
+  Docker Hub	                Repositório oficial de imagens (hub.docker.com).
+  Dockerfile	                Script para criar sua própria imagem personalizada.
+  Volumes	                    Áreas para armazenar dados fora do container.
+  Port Mapping	                Redirecionamento de portas (-p 8080:80 → porta 8080 da máquina acessa porta 80 do container).
+
+
+3. Instalação rápida no Linux
+
+ No seu navegador digite "docker.com" e estaras no site oficial do docker, ai voce podera encontrar todas as informacoes que precisa para instalar o docker no seu sistema operacional.
+
+
+4. Comandos essenciais
+
+  Containers
+  
+  docker ps                           # Lista containers ativos
+  docker ps -a                        # Lista todos os containers (ativos e parados)
+  docker run nome_da_imagem           # Executa imagem 
+  docker stop ID_da_imagem            # Para container
+  docker start ID_da_imagem           # Inicia container parado
+  docker restart ID_da_imagem         # Reinicia container
+  docker rm ID_da_imagem              # Remove container
+
+  Imagens
+
+  docker images                       # Lista imagens
+  docker pull ubuntu:22.04            # Baixa imagem específica
+  docker rmi ID_da_imagem             # Remove imagem
+  docker build -t meuapp .            # Cria imagem via Dockerfile
+
+  Execucao e Acesso
+
+  docker exec -it ID_da_imagem bash   # Entra no terminal do container
+  docker logs ID_da_imagem            # Mostra logs
+
+
+  Volumes
+
+  docker volume create meu_lab          # cria
+  docker volume ls                      # lista
+  docker volume inspect meu_lab         # mostra detalhes (caminho físico, etc.)
+  docker volume rm meu_lab              # remove (se nada estiver usando)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

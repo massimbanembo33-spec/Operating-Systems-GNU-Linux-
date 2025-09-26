@@ -1,0 +1,33 @@
+ Dicionario
+
+1. Listar o directorio corrente 
+ "pwd"
+
+2. Listar quais arquivos/directorios ha no directorio
+ "ls" -> para listar no directorio corrente
+ "ls "caminho_do_directorio_que_deseja_listar" -> para listar os arquivos de qualquer directorio
+
+3. Criar um directorio
+ "mkdir nome_do_directorio_que_deseja_criar"
+
+4. Remover directorio
+ "rm -r nome/caminho_do_directorio_que_deseja_remover"
+
+5. Criar um arquivo txt "texto puro"
+ "touch nome_do_arquivo_que_deseja_criar"
+
+6. Visualizar um arquivo "texto puro"
+ "cat nome_do_arquivo"
+
+7. Eliminar um arquivo
+ "rm nome_do_arquivo_que_deseja_eliminar"
+
+8. Copiar um arquivo/directorio
+ "cp "nome_do_arquivo_que_deseja_copiar" "caminho/nome_do_directorio_destino""
+ "cp -r "nome_do_directorio_de_deseja_copiar" "nome/caminho_do_directorio_destino""
+
+9. Mover um arquivo/directorio
+ "mv "nome_do_arquivo/directorio_que_deseja mover" "nome/caminho_do_directorio_destino""
+
+10. Ir a pasta home
+ "cd ~" ou "cd"

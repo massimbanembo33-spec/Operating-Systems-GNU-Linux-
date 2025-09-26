@@ -1,0 +1,36 @@
+1. Método limpo (recomendado) — Virtual Environment
+ 
+  # Instalar suporte para virtualenv
+ sudo apt install python3-venv -y
+
+  # Criar o ambiente virtual na pasta do Mr. Holmes
+ cd ~/Documentos/OSINT/Mr.Holmes
+ python3 -m venv venv
+
+  # Ativar o ambiente
+ source venv/bin/activate
+
+  # Agora instalar o pyqrcode e pypng
+ pip install pyqrcode pypng
+
+  # Rodar o programa dentro do venv
+ python MrHolmes.py
+ 
+  #Se algo correr mal, para evitar ter que isntalar coisas manualmente, já dentro do ambiente virtual (venv), rode:
+ pip install -r requirements.txt
+
+
+2. Fluxo resumido para trabalhar com o Mr. Holmes no futuro
+
+   #Entrar na pasta do projeto
+  cd ~/Documentos/OSINT/Mr.Holmes
+
+   #Ativar o ambiente virtual
+  source venv/bin/activate
+
+   #Rodar o script
+  python MrHolmes.py
+
+   #Sair do ambiente virtual (quando terminar)
+  deactivate
+
